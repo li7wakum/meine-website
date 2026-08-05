@@ -138,7 +138,7 @@
     flex-direction:column;
     align-items:flex-start;
     justify-content:center;
-    gap:34px;
+    gap:0;
     padding:0 10vw;
     opacity:0;
     visibility:hidden;
@@ -150,14 +150,31 @@
     visibility:visible;
     transform:translateY(0);
   }
-  .mobile-nav a{
-    font-family:'Fraunces',serif;
-    font-size:32px;
-    color:var(--text-primary);
-    text-decoration:none;
-    font-weight:400;
+  .mobile-nav-links{
+    display:flex;
+    flex-direction:column;
+    width:100%;
   }
-  .mobile-nav .btn{align-self:flex-start; margin-top:12px;}
+  .mobile-nav-links a{
+    display:flex;
+    align-items:baseline;
+    gap:20px;
+    padding:22px 0;
+    border-top:1px solid var(--line);
+    text-decoration:none;
+    font-family:'Fraunces',serif;
+    font-size:26px;
+    font-weight:400;
+    color:var(--text-primary);
+  }
+  .mobile-nav-links a:last-child{
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-nav-links a .mono{
+    min-width:20px;
+    color:var(--text-muted);
+  }
+  .mobile-nav .btn{align-self:flex-start; margin-top:36px;}
   .btn{
     display:inline-flex;
     align-items:center;
@@ -818,10 +835,12 @@
 </header>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="#leistungen">Leistungen</a>
-  <a href="#ablauf">Ablauf</a>
-  <a href="#unterschied">Über uns</a>
-  <a href="#kontakt">Kontakt</a>
+  <div class="mobile-nav-links">
+    <a href="#leistungen"><span class="mono">01</span>Leistungen</a>
+    <a href="#ablauf"><span class="mono">02</span>Ablauf</a>
+    <a href="#unterschied"><span class="mono">03</span>Über uns</a>
+    <a href="#kontakt"><span class="mono">04</span>Kontakt</a>
+  </div>
   <a href="#kontakt" class="btn">Angebot anfordern <span class="btn-arrow">→</span></a>
 </div>
 
@@ -919,10 +938,10 @@
 
 <section class="showcase">
   <figure>
-    <img src="https://images.unsplash.com/photo-1609143739217-01b60dad1c67?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Aufgeräumte Kisten nach Haushaltsauflösung">
+    <img src="https://images.unsplash.com/photo-1676311396794-f14881e9daaa?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Werkzeug für den Hausmeisterservice">
     <figcaption>
-      <span class="mono">Entrümpelung &amp; Haushaltsauflösung</span>
-      <div class="cap-title">Freier Raum. Klarer Kopf.</div>
+      <span class="mono">Hausmeisterservice</span>
+      <div class="cap-title">Verlässlich im Blick behalten.</div>
     </figcaption>
   </figure>
   <figure>
@@ -933,10 +952,10 @@
     </figcaption>
   </figure>
   <figure>
-    <img src="https://images.unsplash.com/photo-1676311396794-f14881e9daaa?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Werkzeug für den Hausmeisterservice">
+    <img src="https://images.unsplash.com/photo-1609143739217-01b60dad1c67?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Aufgeräumte Kisten nach Haushaltsauflösung">
     <figcaption>
-      <span class="mono">Hausmeisterservice</span>
-      <div class="cap-title">Verlässlich im Blick behalten.</div>
+      <span class="mono">Entrümpelung &amp; Haushaltsauflösung</span>
+      <div class="cap-title">Freier Raum. Klarer Kopf.</div>
     </figcaption>
   </figure>
 </section>
