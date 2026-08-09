@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atlas Facility Service — Konzept-Mockup</title>
+<title>Atlas Facility Service · Konzept-Mockup</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -789,8 +789,15 @@
     header .btn{padding:9px 16px; font-size:11px;}
     .footer-inner{grid-template-columns:1fr 1fr; gap:44px 32px;}
     .cards{grid-template-columns:1fr;}
-    .trust-strip ul{justify-content:center;}
-    .trust-strip li{padding:6px 20px;}
+    .trust-strip ul{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      column-gap:24px;
+      row-gap:14px;
+      justify-content:center;
+      width:100%;
+    }
+    .trust-strip li{padding:0; text-align:center;}
     .trust-strip li::before{display:none;}
     .leistungen{padding:100px 6vw;}
     .prozess{padding:100px 6vw;}
@@ -853,7 +860,7 @@
       <span class="mono">Zuverlässig · Sauber · Kompetent</span>
     </div>
     <h1><span class="reveal-line line1">Ihr Zuhause.</span><br><span class="reveal-line line2"><em>Unsere Sorgfalt.</em></span></h1>
-    <p class="lead">Entrümpelung, Gartenpflege und Hausmeisterservice aus einer Hand — für Privat- und Gewerbekunden, die Wert auf Qualität und Verlässlichkeit legen.</p>
+    <p class="lead">Entrümpelung, Gartenpflege und Hausmeisterservice aus einer Hand, für Privat- und Gewerbekunden, die Wert auf Qualität und Verlässlichkeit legen.</p>
     <div class="hero-cta">
       <a href="#kontakt" class="btn">Kostenlose Besichtigung anfragen <span class="btn-arrow">→</span></a>
     </div>
@@ -863,8 +870,8 @@
 <div class="trust-strip">
   <ul>
     <li>Schnell &amp; zuverlässig</li>
-    <li>Faire Preise</li>
     <li>Kostenlose Besichtigung</li>
+    <li>Faire Preise</li>
     <li>Kurzfristige Termine</li>
   </ul>
 </div>
@@ -872,26 +879,26 @@
 <section class="leistungen" id="leistungen">
   <div class="section-head">
     <div class="eyebrow"><span class="rule"></span><span class="mono">Leistungen</span></div>
-    <h2>Alles, was Ihr Zuhause braucht — aus einer Hand.</h2>
+    <h2>Alles, was Ihr Zuhause braucht, aus einer Hand.</h2>
   </div>
 
   <div class="cards">
     <div class="card">
       <svg class="card-icon" viewBox="0 0 48 48"><path d="M4 34V16l12-6h16l12 6v18" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 34h40" stroke-linecap="round"/><path d="M14 34V22h20v12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="38" r="2.5"/><circle cx="34" cy="38" r="2.5"/></svg>
       <h3>Entrümpelung</h3>
-      <p>Wir schaffen Raum für Neues — schnell, sauber und ohne Aufwand für Sie. Von der ersten Besichtigung bis zur besenreinen Übergabe übernehmen wir jeden Schritt.</p>
+      <p>Wir schaffen Raum für Neues: schnell, sauber und ohne Aufwand für Sie. Von der ersten Besichtigung bis zur besenreinen Übergabe übernehmen wir jeden Schritt.</p>
       <a href="#kontakt" class="card-link">Angebot anfragen →</a>
     </div>
     <div class="card">
       <svg class="card-icon" viewBox="0 0 48 48"><path d="M24 6v14" stroke-linecap="round"/><path d="M24 20c-8 0-14 6-14 14v8h28v-8c0-8-6-14-14-14z" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 42V30" stroke-linecap="round"/><path d="M31 42V30" stroke-linecap="round"/><path d="M24 42V26" stroke-linecap="round"/></svg>
       <h3>Gartenpflege</h3>
-      <p>Für gepflegte Grünflächen und ein rundum schönes Zuhause. Regelmäßige Pflege oder einmalige Aufwertung — abgestimmt auf Ihre Ansprüche und Ihren Rhythmus.</p>
+      <p>Für gepflegte Grünflächen und ein rundum schönes Zuhause. Regelmäßige Pflege oder einmalige Aufwertung, abgestimmt auf Ihre Ansprüche und Ihren Rhythmus.</p>
       <a href="#kontakt" class="card-link">Angebot anfragen →</a>
     </div>
     <div class="card">
       <svg class="card-icon" viewBox="0 0 48 48"><path d="M24 6L4 20v22h40V20L24 6z" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 42V26h12v16" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="30" r="4" stroke-linecap="round"/></svg>
       <h3>Hausmeisterservice</h3>
-      <p>Kompetente Betreuung Ihrer Immobilie, alles aus einer Hand. Wir behalten den Zustand Ihres Anwesens im Blick — verlässlich, diskret und vorausschauend.</p>
+      <p>Kompetente Betreuung Ihrer Immobilie, alles aus einer Hand. Wir behalten den Zustand Ihres Anwesens im Blick: verlässlich, diskret und vorausschauend.</p>
       <a href="#kontakt" class="card-link">Angebot anfragen →</a>
     </div>
   </div>
@@ -907,19 +914,19 @@
     <div class="route">
       <div class="step">
         <div class="waypoint"></div>
-        <span class="step-label mono">01 — Anfrage</span>
+        <span class="step-label mono">01 · Anfrage</span>
         <h3>Sie schildern Ihr Anliegen</h3>
-        <p>Kurze Nachricht per Telefon, E-Mail oder Formular — wir melden uns zeitnah mit einem ersten Termin zurück.</p>
+        <p>Kurze Nachricht per Telefon, E-Mail oder Formular. Wir melden uns zeitnah mit einem ersten Termin zurück.</p>
       </div>
       <div class="step">
         <div class="waypoint"></div>
-        <span class="step-label mono">02 — Besichtigung</span>
+        <span class="step-label mono">02 · Besichtigung</span>
         <h3>Kostenlose Vor-Ort-Einschätzung</h3>
         <p>Wir sehen uns die Situation gemeinsam an, klären offene Fragen und nennen Ihnen einen fairen, verbindlichen Preis.</p>
       </div>
       <div class="step">
         <div class="waypoint"></div>
-        <span class="step-label mono">03 — Umsetzung</span>
+        <span class="step-label mono">03 · Umsetzung</span>
         <h3>Termin & saubere Ausführung</h3>
         <p>Auch kurzfristig möglich. Wir erledigen die Arbeit zuverlässig und hinterlassen alles besenrein.</p>
       </div>
@@ -955,8 +962,8 @@
   <div class="unterschied-grid">
     <div>
       <div class="eyebrow"><span class="rule"></span><span class="mono">Der Atlas-Unterschied</span></div>
-      <h2>Verlässlichkeit ist bei uns kein Versprechen auf dem Flyer — sie ist die Art, wie wir arbeiten.</h2>
-      <p class="lead">Viele Anbieter in diesem Bereich sind schwer erreichbar, unklar in der Preisgestaltung oder lassen Kunden zwischen Anfrage und Termin lange warten. Atlas Facility Service ist bewusst anders aufgestellt: ein fester Ansprechpartner, ein ehrliches Angebot vor Arbeitsbeginn, und Termine, die sich an Ihrem Zeitplan orientieren — nicht umgekehrt.</p>
+      <h2>Verlässlichkeit ist bei uns kein Versprechen auf dem Flyer. Sie ist die Art, wie wir arbeiten.</h2>
+      <p class="lead">Viele Anbieter in diesem Bereich sind schwer erreichbar, unklar in der Preisgestaltung oder lassen Kunden zwischen Anfrage und Termin lange warten. Atlas Facility Service ist bewusst anders aufgestellt: ein fester Ansprechpartner, ein ehrliches Angebot vor Arbeitsbeginn, und Termine, die sich an Ihrem Zeitplan orientieren, nicht umgekehrt.</p>
       <a href="#kontakt" class="text-link">Persönlich kennenlernen →</a>
     </div>
 
@@ -964,17 +971,17 @@
       <div class="fact">
         <span class="fact-label mono">Erreichbarkeit</span>
         <h3>Ohne Warteschleife</h3>
-        <p>Sie sprechen von der ersten Anfrage bis zur Übergabe mit denselben Ansprechpartnern — kein Callcenter, keine Weiterleitungen.</p>
+        <p>Sie sprechen von der ersten Anfrage bis zur Übergabe mit denselben Ansprechpartnern, kein Callcenter, keine Weiterleitungen.</p>
       </div>
       <div class="fact">
         <span class="fact-label mono">Preisgestaltung</span>
         <h3>Ohne Kleingedrucktes</h3>
-        <p>Nach der kostenlosen Besichtigung erhalten Sie ein klares, verbindliches Angebot — ohne versteckte Zusatzkosten im Nachhinein.</p>
+        <p>Nach der kostenlosen Besichtigung erhalten Sie ein klares, verbindliches Angebot, ohne versteckte Zusatzkosten.</p>
       </div>
       <div class="fact">
         <span class="fact-label mono">Terminplanung</span>
         <h3>Ohne lange Wartezeit</h3>
-        <p>Ob geplantes Projekt oder kurzfristiger Bedarf — wir richten unsere Termine nach dem, was für Sie gerade wichtig ist.</p>
+        <p>Ob geplantes Projekt oder kurzfristiger Bedarf: Wir richten unsere Termine nach dem, was für Sie gerade wichtig ist.</p>
       </div>
     </div>
   </div>
@@ -985,7 +992,7 @@
     <div class="abschluss-intro">
       <div class="eyebrow"><span class="rule"></span><span class="mono">Kontakt</span></div>
       <h2>Lassen Sie uns Ihr Projekt besprechen.</h2>
-      <p>Schildern Sie uns kurz, worum es geht — wir melden uns zeitnah bei Ihnen und vereinbaren bei Bedarf direkt einen Termin für die kostenlose Besichtigung.</p>
+      <p>Schildern Sie uns kurz, worum es geht. Wir melden uns zeitnah bei Ihnen und vereinbaren bei Bedarf direkt einen Termin für die kostenlose Besichtigung.</p>
 
       <div class="direct-contact">
         <a href="tel:+4917628057323"><span class="mono">Telefon</span> +49 176 28057323</a>
@@ -994,7 +1001,7 @@
     </div>
 
     <form class="kontakt" id="kontaktformular" action="https://formspree.io/f/xljreezp" method="POST">
-      <input type="hidden" name="_subject" value="Neue Anfrage über die Website — Atlas Facility Service">
+      <input type="hidden" name="_subject" value="Neue Anfrage über die Website · Atlas Facility Service">
       <div class="form-row">
         <div class="field">
           <label for="name">Name</label>
@@ -1034,7 +1041,7 @@
           <div class="sub">Facility Service</div>
         </div>
       </div>
-      <p>Entrümpelung, Gartenpflege und Hausmeisterservice für Privat- und Gewerbekunden — zuverlässig, sauber, kompetent.</p>
+      <p>Entrümpelung, Gartenpflege und Hausmeisterservice für Privat- und Gewerbekunden: zuverlässig, sauber, kompetent.</p>
     </div>
     <div class="footer-col">
       <h4>Leistungen</h4>
@@ -1062,7 +1069,7 @@
   </div>
   <div class="footer-bottom">
     <span>© 2026 Atlas Facility Service</span>
-    <span><a href="impressum.html" style="color:inherit;text-decoration:none;">Impressum</a> — <a href="datenschutz.html" style="color:inherit;text-decoration:none;">Datenschutz</a></span>
+    <span><a href="impressum.html" style="color:inherit;text-decoration:none;">Impressum</a> · <a href="datenschutz.html" style="color:inherit;text-decoration:none;">Datenschutz</a></span>
   </div>
 </footer>
 
@@ -1164,7 +1171,7 @@
 
         if(response.ok){
           kontaktformular.reset();
-          status.textContent = 'Danke! Ihre Anfrage ist bei uns eingegangen — wir melden uns zeitnah.';
+          status.textContent = 'Danke! Ihre Anfrage ist bei uns eingegangen. Wir melden uns zeitnah.';
           status.className = 'form-status visible success';
           btn.textContent = 'Gesendet ✓';
         } else {
